@@ -26,12 +26,3 @@ SmallImg[3].onclick = function () {
     ProductImg.src = SmallImg[3].src;
 }
 
-// js for toggle form
-var loginform = document.getElementById("LoginForm")
-var regform = document.getElementById("RegistrationForm")
-var indicator = document.getElementById("indicator")
-
-function login(){}
-function register(){
-regform.style.transform
-}
