@@ -1,28 +1,39 @@
-var MenuItems = document.getElementById("MenuItems")
-var SmallImg = document.getElementsByClassName("small-img")
-var productimg = document.getElementById("ProductImg")
-MenuItems.style.maxHeight = "0px"
+const http = require('http');
+const fs = require('fs');
 
-function menutoggle() {
-    if (MenuItems.style.maxHeight == "0px") {
-        MenuItems.style.maxHeight = "200px";
+const indexhtml = fs.readFileSync('./index.html')
+const about = fs.readFileSync('./about.html')
+const contact = fs.readFileSync('./contact.html')
+const account = fs.readFileSync('./account.html')
+const cart = fs.readFileSync('./cart.html')
+const product = fs.readFileSync('./product.html')
+const productdetails = fs.readFileSync('./productdetails.html')
+
+const server = http.createServer((req, res) => {
+    try {
+        if (req.url == '/') {
+            res.end(indexhtml)
+        } else if (req.url == '/contact') {
+            res.end(contact)
+        } else if (req.url == '/account') {
+            res.end(account)
+        } else if (req.url == '/about') {
+            res.end(about)
+        } else if (req.url == '/account') {
+            res.end(account)
+        } else if (req.url == '/cart') {
+            res.end(cart)
+        } else if (req.url == '/product') {
+            res.end(product)
+        } else if (req.url == '/productdetails') {
+            res.end(productdetails)
+        } else {
+            res.end('404 not found')
+        }
+    } catch (error) {
+        console.log(error)
     }
-    else {
-        MenuItems.style.maxHeight = "0px";
-    }
-}
-
-
-SmallImg[0].onclick = function () {
-    ProductImg.src = SmallImg[0].src;
-}
-SmallImg[1].onclick = function () {
-    ProductImg.src = SmallImg[1].src;
-}
-SmallImg[2].onclick = function () {
-    ProductImg.src = SmallImg[2].src;
-}
-SmallImg[3].onclick = function () {
-    ProductImg.src = SmallImg[3].src;
-}
-
+})
+server.listen(5000, () => {
+    console.log("Server Running on port 5000")
+})

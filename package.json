@@ -1,0 +1,25 @@
+{
+  "name": "e-commerce-backup",
+  "version": "1.0.0",
+  "description": "This project is availabe on easy tutorials youtube channel I'm using it as reference to improve my CSS.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rashidsayyed/E-commerce-Backup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rashidsayyed/E-commerce-Backup/issues"
+  },
+  "homepage": "https://github.com/rashidsayyed/E-commerce-Backup#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0",
+    "node": "^18.4.0"
+  }
+}
