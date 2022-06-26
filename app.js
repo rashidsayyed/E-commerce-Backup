@@ -8,7 +8,7 @@ const account = fs.readFileSync('./account.html')
 const cart = fs.readFileSync('./cart.html')
 const product = fs.readFileSync('./product.html')
 const productdetails = fs.readFileSync('./productdetails.html')
-
+const style = fs.readFileSync('./styles.css')
 const server = http.createServer((req, res) => {
     try {
         if (req.url == '/') {
@@ -34,6 +34,6 @@ const server = http.createServer((req, res) => {
         console.log(error)
     }
 })
-server.listen(5000, () => {
-    console.log("Server Running on port 5000")
+server.listen(5500, () => {
+    console.log("Server Running on port 5500")
 })

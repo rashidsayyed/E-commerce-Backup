@@ -552,12 +552,53 @@ form a{
     transform:translate(100px) ;
     transition: transform 1s;
 }
-
-
-
-
-
-
+.contact-form-container{
+    display: block;
+    margin: 80px auto;
+    width: auto;
+    height: auto;  
+    justify-content: center;
+    /* border: 2px solid #ff523b; */
+}
+#contact-form{
+    width: 80%;
+    flex-basis: 50%;
+}
+.contact-page{
+    max-width: 2080px;
+}
+textarea {
+    margin-top: 10px;
+    resize: none;
+    resize: none;
+    width: 100%;
+    border: 1px solid #dac6c6;
+    height: 200px;
+    padding: 2px 0px 0px 9px;
+    font-style: inherit;
+}
+.f-in{
+    border-radius: 15px;
+    border: 1px solid #ff523b;
+    font-style: sans-serif;
+} 
+.f-in:focus{
+    outline: none;
+} 
+.cbtn{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    border: none;
+    transition: background 0.5s;
+}
+.cbtn:hover{
+    background: #461009;
+}
 @media only screen and (max-width: 800px) {
     nav ul {
         position: absolute;
