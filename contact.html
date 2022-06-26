@@ -13,20 +13,20 @@
     <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
 </head>
 
-<body>
+<body style="  background: radial-gradient(#fff 20px 20%, #f29e93);">
 
-    <div class="container">
+    <div class="container  contact-page">
         <div class="navbar">
             <div class="logo">
                 <img src="./images/logo.png" alt="logo.png" width="125px" />
             </div>
             <nav>
                 <ul id="MenuItems">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about/html">About Us</a></li>
-                    <li><a href="./product.html">Products</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                    <li><a href="./account.html">Account</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/product">Products</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/account">Account</a></li>
                 </ul>
             </nav>
             <a href="./cart.html">
@@ -35,7 +35,18 @@
             <img src="./images/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
-contact html
+
+<div class="small-container  contact-page-main">
+    <div class="contact-form-container">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <input type="text" placeholder="Enter Your name" class="f-in">
+            <input type="text" placeholder="Enter Your E-mail" class="f-in">
+            <textarea id="t-area" placeholder="Enter Your Queries"  class="f-in"></textarea>
+            <button type="submit" class="cbtn">Email Us</button>
+        </form>
+    </div>
+</div>
 
     </div>
     <div class="footer">
@@ -79,6 +90,6 @@ contact html
         </div>
     </div>
 </body>
-<script src="app.js"></script>
+<script src="script.js"></script>
 
 </html>

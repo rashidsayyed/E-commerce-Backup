@@ -14,28 +14,115 @@
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="./images/logo.png" alt="logo.png" width="125px" />
+    <div class="header">     
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="logo.png" width="125px" />
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/product">Products</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/account">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="./cart.html">
+                    <img src="./images/cart.png" alt="cart" width="30px" height="30px">
+                </a><img src="./images/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
             </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./product.html">Products</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                    <li><a href="./account.html">Account</a></li>
-                </ul>
-            </nav>
-            <a href="./cart.html">
-                <img src="./images/cart.png" alt="cart" width="30px" height="30px">
-            </a>
-            <img src="./images/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give your workout<br> A new style!</h1>
+                    <p>Success isn't always about greatness. It's about consistency. Consistent <br> hard work gains
+                        success. Greatness will come.</p>
+                    <a href="" class="btn">Explore Now &#8594</a>
+                </div>
+                <div class="col-2">
+                    <img src="./images/image1.png" alt="image1">
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    </div>
+    <!-- testimonial -->
+    <div class="testimonial">
+        <div class="small-container">
+            <h2 class="title">Our Team</h2>
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reiciendis enim numquam! 
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="./images/user-1.png" alt="user-1">
+                    <h3>Sean Parker</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reiciendis enim numquam! 
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="./images/user-2.png" alt="user-2">
+                    <h3>Mike Smithh</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reiciendis enim numquam! 
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="./images/user-3.png" alt="user-3">
+                    <h3>Joe mama</h3>
+                </div>
+            </div>
         </div>
     </div>
-about html
+    <!-- brands -->
+    <div class="brands">
+        <div class="small-container">
+            <h2 class="title">Our Sponsors</h2>
+            <div class="row">
+                <div class="col-5">
+                    <img src="./images/logo-godrej.png" alt="logo-godrej">
+                </div>
+                <div class="col-5">
+                    <img src="./images/logo-coca-cola.png" alt="logo-coca-cola">
+                </div>
+                <div class="col-5">
+                    <img src="./images/logo-oppo.png" alt="logo-oppo">
+                </div>
+                <div class="col-5">
+                    <img src="./images/logo-paypal.png" alt="logo-paypal">
+                </div>
+                <div class="col-5">
+                    <img src="./images/logo-philips.png" alt="logo-philips">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer">
         <div class="container">
@@ -78,6 +165,6 @@ about html
         </div>
     </div>
 </body>
-<script src="app.js"></script>
+<script src="script.js"></script>
 
 </html>
